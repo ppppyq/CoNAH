@@ -1,0 +1,27 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+.venv-ui/
+.docs-venv/
+
+# Runtime outputs, checkpoints & secrets
+runs/
+logs/
+checkpoints/
+*.log
+.env
+secrets.env
+*secret*
+
+# Sphinx build output
+docs/build/

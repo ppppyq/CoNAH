@@ -1,0 +1,25 @@
+{
+  "platform": "hm3d_m3",
+  "m3_root": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code",
+  "harnessvln_root": "/home/pyq/hm3d_m3_repro/harnessvln-code",
+  "episodes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/datasets/ma_objectnav_ovon/val_unseen/ma_official_mini_100_samefloor_mixed3_kmquota_seed1123.json",
+  "scenes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/scene_datasets/hm3d-1.0/hm3d_v0.2",
+  "iin_images": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/datasets/ma_objectnav_ovon/val_unseen/iin_images_official_mini100_mixed3_stretch512",
+  "episode_id": "00849-a8BtkwhxdRV_01257",
+  "seed": 1123,
+  "max_ticks": 120,
+  "path_budget": true,
+  "claim_max_depth_m": 1.0,
+  "model_workers": 3,
+  "communication": {"type": "ideal", "clock": "logical_ticks"},
+  "planner": {
+    "mode": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 768,
+    "max_tool_rounds": 5,
+    "max_calls": 40,
+    "max_total_tokens": 150000,
+    "timeout_s": 45
+  }
+}

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1280" viewBox="0 0 2400 1280" role="img" aria-labelledby="title desc">
+<title id="title">Communication-Native Multi-Agent Harnesses 多机协同视觉导航架构</title>
+<desc id="desc">横向四层加底部通信协同总线：任务入口、多智能体独立 Harness 集群、平台接口、多机锁步执行环境，以及底部已激活的 IdealTransport 与 CollaborativeMemoryHub 通信协作层。</desc>
+<rect x="0" y="0" width="2400" height="1280" rx="0" fill="#FFFFFF" stroke="none" />
+<text x="40" y="64" fill="#17283E" font-size="42" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">Communication-Native Multi-Agent Harnesses</text>
+<text x="42" y="108" fill="#54657B" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">当前多机协同工程架构 (Mode B)  /  N 个独立智能体 Harness · 跨机通信与协同分工 · 任务与平台解耦</text>
+<text x="2360" y="106" fill="#54657B" font-size="19" font-family="Consolas, monospace" font-weight="400" text-anchor="end">MULTI-ROBOT HARNESSVLN  ·  2026.11</text>
+<rect x="40" y="146" width="290" height="66" rx="10" fill="#60952F" stroke="none" />
+<text x="185" y="190" fill="#FFFFFF" font-size="30" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">任务入口</text>
+<rect x="40" y="226" width="290" height="690" rx="12" fill="#F1F7E9" stroke="none" />
+<rect x="356" y="146" width="1140" height="66" rx="10" fill="#237CDD" stroke="none" />
+<text x="926" y="190" fill="#FFFFFF" font-size="30" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">多智能体独立 Harness 集群 (N Robots)</text>
+<rect x="356" y="226" width="1140" height="690" rx="12" fill="#EEF5FE" stroke="none" />
+<rect x="1522" y="146" width="370" height="66" rx="10" fill="#465FD2" stroke="none" />
+<text x="1707" y="190" fill="#FFFFFF" font-size="30" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">平台接口</text>
+<rect x="1522" y="226" width="370" height="690" rx="12" fill="#F0F2FD" stroke="none" />
+<rect x="1918" y="146" width="442" height="66" rx="10" fill="#7950D6" stroke="none" />
+<text x="2139" y="190" fill="#FFFFFF" font-size="30" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">多机锁步执行环境</text>
+<rect x="1918" y="226" width="442" height="690" rx="12" fill="#F5F0FD" stroke="none" />
+<rect x="62" y="258" width="246" height="196" rx="14" fill="#FFFFFF" stroke="#D2E2BF" stroke-width="2" />
+<text x="185" y="298" fill="#60952F" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">多机多目标定义</text>
+<text x="185" y="342" fill="#17283E" font-size="26" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">N 机协同找 M 目标</text>
+<text x="185" y="376" fill="#237CDD" font-size="18" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">vase · mirror · radiator</text>
+<text x="185" y="408" fill="#54657B" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">tasks/multi_harness_vln/</text>
+<text x="185" y="434" fill="#54657B" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">configs/*_3goals.json</text>
+<rect x="62" y="522" width="246" height="144" rx="14" fill="#FFFFFF" stroke="#D2E2BF" stroke-width="2" />
+<text x="185" y="562" fill="#17283E" font-size="25" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">启动与并行装配</text>
+<text x="185" y="598" fill="#60952F" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">CLI / Multi-Launcher</text>
+<text x="185" y="628" fill="#54657B" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">comm_harness/cli/</text>
+<text x="185" y="650" fill="#54657B" font-size="15" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">multi_harness_vln/launcher.py</text>
+<rect x="62" y="730" width="246" height="152" rx="14" fill="#FFFFFF" stroke="#D2E2BF" stroke-width="2" />
+<text x="185" y="768" fill="#17283E" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">运行配置与预算</text>
+<text x="185" y="802" fill="#54657B" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">num_robots=N · goal_indices</text>
+<text x="185" y="832" fill="#54657B" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">每机独立 Call / Token 预算</text>
+<text x="185" y="862" fill="#60952F" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">自动合成慢放中文解说 MP4</text>
+<polyline points="185,454 185,522" fill="none" stroke="#60952F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="185.00,522.00 190.50,511.00 179.50,511.00" fill="#60952F" />
+<polyline points="185,730 185,666" fill="none" stroke="#60952F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="185.00,666.00 179.50,677.00 190.50,677.00" fill="#60952F" />
+<rect x="380" y="248" width="555" height="104" rx="14" fill="#FFFFFF" stroke="#B6D1F0" stroke-width="2" />
+<text x="657" y="285" fill="#237CDD" font-size="25" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">外部多模态大模型服务 · VLM API</text>
+<text x="657" y="316" fill="#17283E" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">Qwen3.8-Max / DeepSeek-Flash / Ollama (并发请求)</text>
+<text x="657" y="340" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">comm_harness/planner/model_client.py</text>
+<rect x="955" y="248" width="515" height="104" rx="14" fill="#FFFFFF" stroke="#B6D1F0" stroke-width="2" />
+<text x="1212" y="285" fill="#237CDD" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">GPU 共享视觉感知 · SharedGroundedSAM</text>
+<text x="1212" y="316" fill="#17283E" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">GroundingDINO-SwinT + RepViT-SAM (线程锁共享单份权重)</text>
+<text x="1212" y="340" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">N 机共享显存峰值仅 ~1.8 GB · 实时开放词表分割</text>
+<rect x="396" y="398" width="1082" height="492" rx="16" fill="#DCECFD" stroke="#92BDEC" stroke-width="2" />
+<rect x="388" y="388" width="1082" height="492" rx="16" fill="#E7F2FE" stroke="#A6C8F0" stroke-width="2" />
+<rect x="378" y="376" width="1082" height="494" rx="16" fill="#F9FCFF" stroke="#237CDD" stroke-width="2" />
+<text x="402" y="408" fill="#237CDD" font-size="20" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">tasks/multi_harness_vln/  ·  每个机器人运行完全独立的 RobotHarnessVLN 实例</text>
+<rect x="1180" y="386" width="84" height="28" rx="8" fill="#237CDD" stroke="none" />
+<text x="1222" y="406" fill="#FFFFFF" font-size="16" font-family="Consolas, monospace" font-weight="700" text-anchor="middle">robot_0</text>
+<rect x="1272" y="386" width="84" height="28" rx="8" fill="#16A34A" stroke="none" />
+<text x="1314" y="406" fill="#FFFFFF" font-size="16" font-family="Consolas, monospace" font-weight="700" text-anchor="middle">robot_1</text>
+<rect x="1364" y="386" width="80" height="28" rx="8" fill="#EA580C" stroke="none" />
+<text x="1404" y="406" fill="#FFFFFF" font-size="16" font-family="Consolas, monospace" font-weight="700" text-anchor="middle">robot_N</text>
+<rect x="402" y="428" width="380" height="122" rx="14" fill="#FFFFFF" stroke="#C6D9EC" stroke-width="2" />
+<text x="422" y="462" fill="#17283E" font-size="23" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">任务规则与 STOP 几何门控</text>
+<text x="422" y="492" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">深度/距离双重校验 · 同房多候选去重</text>
+<text x="422" y="518" fill="#237CDD" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">目标完成自动接力下一个 PENDING 目标</text>
+<text x="422" y="540" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="start">tasks/object_navigation.py</text>
+<rect x="1038" y="428" width="398" height="122" rx="14" fill="#FFFFFF" stroke="#C6D9EC" stroke-width="2" />
+<text x="1058" y="462" fill="#17283E" font-size="23" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">VLM 规划与协同提示词适配</text>
+<text x="1058" y="492" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">4向环视推理 · 2D 框选 · 停止双重确认</text>
+<text x="1058" y="518" fill="#0D9488" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">注入 [TEAM_SHARED_MEMORY] 队友相对方位</text>
+<text x="1058" y="540" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="start">tasks/harness_vln/agent.py</text>
+<rect x="610" y="580" width="610" height="128" rx="17" fill="#DCECFD" stroke="#237CDD" stroke-width="2" />
+<text x="915" y="616" fill="#237CDD" font-size="26" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">单机独立执行循环 · RobotHarnessVLN</text>
+<text x="915" y="648" fill="#17283E" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">环视建图 → 自身+团队记忆检索 → VLM 推理/框选 → 跨机线索 FMM 投影 → 动作执行</text>
+<text x="915" y="676" fill="#0D9488" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">顺路发现队友目标自动触发 GroundedSAM / VLM 跨机 3D 坐标广播</text>
+<text x="915" y="698" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">tasks/multi_harness_vln/multi_evaluator.py</text>
+<rect x="402" y="742" width="420" height="110" rx="14" fill="#FFFFFF" stroke="#C6D9EC" stroke-width="2" />
+<text x="422" y="774" fill="#17283E" font-size="23" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">每机独立记忆与局部语义地图</text>
+<text x="422" y="804" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">各自独立 WorldGraph (Place/Object/Failure) · TodoList</text>
+<text x="422" y="828" fill="#54657B" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">各自独立 Semantic_Mapping (局部栅格) + FusionMapPolicy</text>
+<text x="422" y="846" fill="#54657B" font-size="15" font-family="Consolas, monospace" font-weight="400" text-anchor="start">comm_harness/memory/world_graph.py · retrieval.py</text>
+<rect x="1038" y="742" width="398" height="110" rx="14" fill="#FFFFFF" stroke="#C6D9EC" stroke-width="2" />
+<text x="1058" y="774" fill="#17283E" font-size="23" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">通用工具执行器与运行审计</text>
+<text x="1058" y="804" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">HarnessRuntime · 动作回执 (Receipt) · 义务检查</text>
+<text x="1058" y="828" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">保证观测-决策-执行闭环零违规 (violations = 0)</text>
+<text x="1058" y="846" fill="#54657B" font-size="15" font-family="Consolas, monospace" font-weight="400" text-anchor="start">comm_harness/tools/runtime.py · executor.py</text>
+<polyline points="308,594 540,594 540,618 610,618" fill="none" stroke="#60952F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="610.00,618.00 599.00,612.50 599.00,623.50" fill="#60952F" />
+<text x="445" y="582" fill="#60952F" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">装配 N 个机器人</text>
+<polyline points="657,352 657,376" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="657.00,376.00 662.50,365.00 651.50,365.00" fill="#237CDD" />
+<polygon points="657.00,352.00 651.50,363.00 662.50,363.00" fill="#237CDD" />
+<polyline points="1212,352 1212,428" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1212.00,428.00 1217.50,417.00 1206.50,417.00" fill="#237CDD" />
+<polygon points="1212.00,352.00 1206.50,363.00 1217.50,363.00" fill="#237CDD" />
+<polyline points="660,550 720,580" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="720.00,580.00 712.62,570.16 707.70,580.00" fill="#237CDD" />
+<polyline points="1160,550 1100,580" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1100.00,580.00 1112.30,580.00 1107.38,570.16" fill="#237CDD" />
+<polygon points="1160.00,550.00 1147.70,550.00 1152.62,559.84" fill="#237CDD" />
+<polyline points="660,742 720,708" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="720.00,708.00 707.72,708.64 713.14,718.21" fill="#237CDD" />
+<polygon points="660.00,742.00 672.28,741.36 666.86,731.79" fill="#237CDD" />
+<polyline points="1160,708 1120,742" fill="none" stroke="#237CDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1120.00,742.00 1131.94,739.07 1124.82,730.69" fill="#237CDD" />
+<polygon points="1160.00,708.00 1148.06,710.93 1155.18,719.31" fill="#237CDD" />
+<rect x="1544" y="258" width="326" height="170" rx="14" fill="#FFFFFF" stroke="#CAD1F3" stroke-width="2" />
+<text x="1564" y="294" fill="#465FD2" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">单机环境代理视图</text>
+<text x="1564" y="326" fill="#17283E" font-size="21" font-family="Consolas, monospace" font-weight="700" text-anchor="start">SingleRobotEnvProxy</text>
+<text x="1564" y="356" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">为每个 RobotHarnessVLN 提供独立</text>
+<text x="1564" y="382" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">VectorEnv 接口与自身坐标系位姿</text>
+<text x="1564" y="412" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="start">multi_harness_vln/env_adapter.py</text>
+<rect x="1544" y="466" width="326" height="210" rx="14" fill="#FFFFFF" stroke="#AEBBEC" stroke-width="2" />
+<text x="1564" y="502" fill="#465FD2" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">HM3D 平台工具与能力</text>
+<text x="1564" y="538" fill="#17283E" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">observe_panorama (360° 环视)</text>
+<text x="1564" y="568" fill="#17283E" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="start">fmm_navigate · backtrack_step</text>
+<text x="1564" y="598" fill="#17283E" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="start">query_depth · project_target</text>
+<text x="1564" y="630" fill="#0D9488" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">SE(2) 局部地图 ↔ 全局 XZ 刚体变换</text>
+<text x="1564" y="658" fill="#54657B" font-size="14" font-family="Consolas, monospace" font-weight="400" text-anchor="start">platforms/hm3d_m3/habitat/pose_utils.py</text>
+<rect x="1544" y="714" width="326" height="174" rx="14" fill="#FFFFFF" stroke="#CAD1F3" stroke-width="2" />
+<text x="1564" y="750" fill="#17283E" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">平台支撑与可视化合成</text>
+<text x="1564" y="782" fill="#54657B" font-size="17" font-family="Consolas, monospace" font-weight="400" text-anchor="start">Semantic_Mapping · FusionMapPolicy</text>
+<text x="1564" y="812" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">LaViRAVisualizer (每机独立面板)</text>
+<text x="1564" y="842" fill="#465FD2" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">双机同屏 + 4行中文实时解说字幕合成</text>
+<text x="1564" y="870" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="start">platforms/hm3d_m3/harness_vln/</text>
+<polyline points="1436,796 1500,796 1500,565 1544,565" fill="none" stroke="#465FD2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1544.00,565.00 1533.00,559.50 1533.00,570.50" fill="#465FD2" />
+<polygon points="1436.00,796.00 1447.00,801.50 1447.00,790.50" fill="#465FD2" />
+<polyline points="1707,428 1707,466" fill="none" stroke="#465FD2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1707.00,466.00 1712.50,455.00 1701.50,455.00" fill="#465FD2" />
+<polygon points="1707.00,428.00 1701.50,439.00 1712.50,439.00" fill="#465FD2" />
+<rect x="1940" y="258" width="398" height="226" rx="14" fill="#FFFFFF" stroke="#D3C1ED" stroke-width="2" />
+<text x="1962" y="294" fill="#7950D6" font-size="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">多机锁步协调器 · 已接入</text>
+<text x="1962" y="328" fill="#17283E" font-size="22" font-family="Consolas, monospace" font-weight="700" text-anchor="start">MultiAgentSimCoordinator</text>
+<text x="1962" y="360" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• 主线程独占 OpenGL 上下文锁步推进</text>
+<text x="1962" y="388" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• threading.Condition 同步 N 机动作</text>
+<text x="1962" y="416" fill="#7950D6" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• N &gt; 2 时自动采样 NavMesh 可行出生点</text>
+<text x="1962" y="444" fill="#0D9488" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 每 Tick 触发 IdealTransport 消息投递</text>
+<text x="1962" y="470" fill="#54657B" font-size="15" font-family="Consolas, monospace" font-weight="400" text-anchor="start">multi_harness_vln/env_adapter.py</text>
+<rect x="1940" y="506" width="398" height="214" rx="14" fill="#FFFFFF" stroke="#D3C1ED" stroke-width="2" />
+<text x="2139" y="544" fill="#17283E" font-size="30" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">HM3D-M³  (Sim-MA-v1)</text>
+<text x="2139" y="578" fill="#7950D6" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">MultiAgentSimulator 多机物理仿真</text>
+<text x="2139" y="610" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">同一 3D 场景内驱动 AGENT_0 .. AGENT_{N-1}</text>
+<text x="2139" y="636" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="middle">单机 STOP 原地驻留，不中断其余队友探索</text>
+<rect x="1962" y="650" width="354" height="56" rx="10" fill="#F5F0FD" stroke="none" />
+<text x="2139" y="674" fill="#7950D6" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">团队级私有真值评测 (evaluate_team)</text>
+<text x="2139" y="696" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">Team SR · Team Oracle SR · Team SPL</text>
+<rect x="1940" y="742" width="398" height="146" rx="14" fill="#FCFAFF" stroke="#B7A0D9" stroke-width="2" stroke-dasharray="10 7" />
+<text x="1962" y="776" fill="#7950D6" font-size="23" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">真实多机硬件 · 预留接口</text>
+<text x="1962" y="810" fill="#17283E" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">UAV 无人机集群 · Ackermann 阿克曼小车</text>
+<text x="1962" y="840" fill="#17283E" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">USRP 无线电节点 (真实信道损伤注入)</text>
+<text x="1962" y="868" fill="#54657B" font-size="16" font-family="Consolas, monospace" font-weight="400" text-anchor="start">platforms/{uav, ackermann, usrp}/</text>
+<polyline points="1870,340 1940,340" fill="none" stroke="#7950D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1940.00,340.00 1929.00,334.50 1929.00,345.50" fill="#7950D6" />
+<polygon points="1870.00,340.00 1881.00,345.50 1881.00,334.50" fill="#7950D6" />
+<polyline points="2139,484 2139,506" fill="none" stroke="#7950D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="2139.00,506.00 2144.50,495.00 2133.50,495.00" fill="#7950D6" />
+<polygon points="2139.00,484.00 2133.50,495.00 2144.50,495.00" fill="#7950D6" />
+<polyline points="55,968 110,968" fill="none" stroke="#60952F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="110.00,968.00 99.00,962.50 99.00,973.50" fill="#60952F" />
+<text x="124" y="976" fill="#17283E" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">已接入 (实机运行)</text>
+<polyline points="55,1014 110,1014" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="110.00,1014.00 99.00,1008.50 99.00,1019.50" fill="#0D9488" />
+<text x="124" y="1022" fill="#0D9488" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">多机通信协同链路</text>
+<polyline points="55,1060 110,1060" fill="none" stroke="#9C8AB9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7" />
+<polygon points="110.00,1060.00 99.00,1054.50 99.00,1065.50" fill="#9C8AB9" />
+<text x="124" y="1068" fill="#54657B" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">下一阶段扩展规划</text>
+<text x="55" y="1112" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">N 机完全解耦并行</text>
+<text x="55" y="1138" fill="#54657B" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">无特权真值泄露</text>
+<rect x="356" y="944" width="2004" height="248" rx="16" fill="#F0FDFA" stroke="#0D9488" stroke-width="3" />
+<text x="384" y="986" fill="#0F766E" font-size="28" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">多机通信与协同记忆中枢</text>
+<text x="720" y="986" fill="#17283E" font-size="18" font-family="Consolas, monospace" font-weight="400" text-anchor="start">comm_harness/communication/IdealTransport  +  tasks/multi_harness_vln/collaboration.py (CollaborativeMemoryHub)</text>
+<rect x="2030" y="958" width="306" height="36" rx="18" fill="#0D9488" stroke="none" />
+<text x="2183" y="982" fill="#FFFFFF" font-size="19" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="middle">● 多机通信链路已激活</text>
+<rect x="380" y="1006" width="465" height="166" rx="12" fill="#FFFFFF" stroke="#99F6E4" stroke-width="2" />
+<text x="400" y="1038" fill="#0F766E" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">1. 动态多目标任务板 (Task Board)</text>
+<text x="400" y="1068" fill="#17283E" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 消息: GOAL_ASSIGNED / GOAL_FOUND</text>
+<text x="400" y="1096" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• N ≤ M: 初始各自认领 PENDING 目标，先完自动接力</text>
+<text x="400" y="1122" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• N &gt; M: 空闲机器人自动加入 Co-Search 协同合搜</text>
+<text x="400" y="1148" fill="#0D9488" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 任一队友完成验证即全队广播同步状态</text>
+<rect x="865" y="1006" width="505" height="166" rx="12" fill="#FFFFFF" stroke="#99F6E4" stroke-width="2" />
+<text x="885" y="1038" fill="#0F766E" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">2. 跨机 3D 线索广播与 FMM 直接投影</text>
+<text x="885" y="1068" fill="#17283E" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 消息: OBJECT_SIGHTING / COLLABORATIVE_VERIFIED</text>
+<text x="885" y="1096" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• 触发: GroundedSAM 或 VLM 顺路看到队友的目标物体</text>
+<text x="885" y="1122" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• 消费: 接收端经 SE(2) 变换投影至自身局部 FMM 地图</text>
+<text x="885" y="1148" fill="#0D9488" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• get_best_sighting_for_category() 直接引导跨房导航</text>
+<rect x="1390" y="1006" width="475" height="166" rx="12" fill="#FFFFFF" stroke="#99F6E4" stroke-width="2" />
+<text x="1410" y="1038" fill="#0F766E" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">3. 共享拓扑房间记忆与空间防冲突</text>
+<text x="1410" y="1068" fill="#17283E" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 消息: PLACE_OBSERVED / INTENT_CLAIM</text>
+<text x="1410" y="1096" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• 实时广播已搜房间的语义摘要与看到的物体列表</text>
+<text x="1410" y="1122" fill="#54657B" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">• 换算为相对当前机器人的距离与方位 (前/左/右/后)</text>
+<text x="1410" y="1148" fill="#0D9488" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 注入 [TEAM_SHARED_MEMORY] 避免重复搜同一房间</text>
+<rect x="1885" y="1006" width="452" height="166" rx="12" fill="#FCFAFF" stroke="#9C8AB9" stroke-width="2" stroke-dasharray="8 6" />
+<text x="1905" y="1038" fill="#7950D6" font-size="21" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">4. 下一阶段研究扩展 · 规划</text>
+<text x="1905" y="1070" fill="#17283E" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 分布式拓扑世界图 (Distributed WorldGraph):</text>
+<text x="1905" y="1096" fill="#54657B" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">  跨机增量图同步 ΔG 与公共交汇节点空间拓扑缝合</text>
+<text x="1905" y="1124" fill="#17283E" font-size="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">• 受限无线通信信道 (Channel Impairments):</text>
+<text x="1905" y="1150" fill="#54657B" font-size="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">  带宽预算裁剪 · 丢包重传 · 距离衰减与断联恢复</text>
+<polyline points="612,852 612,944" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="612.00,944.00 617.50,933.00 606.50,933.00" fill="#0D9488" />
+<polygon points="612.00,852.00 606.50,863.00 617.50,863.00" fill="#0D9488" />
+<text x="535" y="912" fill="#0F766E" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">广播 / 接收记忆</text>
+<polyline points="915,708 915,944" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="915.00,944.00 920.50,933.00 909.50,933.00" fill="#0D9488" />
+<polygon points="915.00,708.00 909.50,719.00 920.50,719.00" fill="#0D9488" />
+<text x="995" y="912" fill="#0F766E" font-size="18" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="700" text-anchor="start">3D 线索投影 &amp; 任务接力</text>
+<polyline points="2060,484 1910,484 1910,944" fill="none" stroke="#0D9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<polygon points="1910.00,944.00 1915.50,933.00 1904.50,933.00" fill="#0D9488" />
+<polygon points="2060.00,484.00 2049.00,478.50 2049.00,489.50" fill="#0D9488" />
+<text x="1845" y="912" fill="#0F766E" font-size="16" font-family="Consolas, monospace" font-weight="700" text-anchor="start">deliver_tick()</text>
+<text x="356" y="1232" fill="#54657B" font-size="20" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-weight="400" text-anchor="start">当前能力：支持任意 N 台独立 HarnessVLN 机器人对任意 M 个多模态目标 (ON / TN) 进行动态分工、跨机 3D 线索 FMM 投影导航、拓扑记忆共享与慢放中文解说视频录制（单场通信仅 ~20 KB）。</text>
+</svg>

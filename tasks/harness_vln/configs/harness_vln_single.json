@@ -1,0 +1,16 @@
+{
+  "method": "harness-vln",
+  "episodes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/datasets/ma_objectnav_ovon/val_unseen/ma_official_mini_100_samefloor_mixed3_kmquota_seed1123.json",
+  "scenes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/scene_datasets/hm3d-1.0/hm3d_v0.2",
+  "assets": "/home/pyq/hm3d_m3_repro/harnessvln-code/data/grounded_sam",
+  "asset_manifest": "/home/pyq/hm3d_m3_repro/harness-assets.json",
+  "timeout_s": 1200,
+  "max_gpu_memory_gb": 5,
+  "planner": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "max_calls": 60,
+    "max_total_tokens": 250000
+  },
+  "task_file": "find_radiator.json"
+}

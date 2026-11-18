@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conah"
+version = "0.1.0"
+description = "CoNAH: A Communication-Native Agentic Harness for Multi-Robot Embodied Intelligence"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+    "numpy>=1.20.0",
+    "Pillow>=9.0.0",
+]
+
+[project.optional-dependencies]
+ui = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.22.0",
+    "rich>=13.0.0",
+    "prompt_toolkit>=3.0.0",
+]
+hm3d = [
+    "openai>=1.0.0",
+    "torch",
+    "torchvision",
+    "opencv-python",
+    "scikit-image",
+    "fastdtw",
+    "matplotlib",
+    "tqdm",
+]
+docs = [
+    "Sphinx>=7.2.0",
+    "pydata-sphinx-theme>=0.15.0",
+    "sphinx-autobuild>=2024.4.16",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-design>=0.5.0",
+    "sphinx-sitemap>=2.5.1",
+]
+dev = [
+    "pytest>=7.0.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+conah = "comm_harness.cli.main:main"
+conah-check-llm = "comm_harness.cli.check_llm:main"
+comm-harness = "comm_harness.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["comm_harness*", "platforms*", "tasks*"]

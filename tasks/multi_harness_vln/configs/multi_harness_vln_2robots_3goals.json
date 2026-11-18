@@ -1,0 +1,20 @@
+{
+  "method": "multi-harness-vln",
+  "episodes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/datasets/ma_objectnav_ovon/val_unseen/ma_official_mini_100_samefloor_mixed3_kmquota_seed1123.json",
+  "scenes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/scene_datasets/hm3d-1.0/hm3d_v0.2",
+  "assets": "/home/pyq/hm3d_m3_repro/harnessvln-code/data/grounded_sam",
+  "asset_manifest": "/home/pyq/hm3d_m3_repro/harness-assets.json",
+  "episode_id": "00849-a8BtkwhxdRV_01257",
+  "num_robots": 2,
+  "goal_indices": [1, 2, 3],
+  "max_steps": 220,
+  "timeout_s": 1800,
+  "max_gpu_memory_gb": 6,
+  "seed": 1123,
+  "planner": {
+    "model": "qwen3.8-max",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_calls_per_robot": 80,
+    "max_total_tokens": 500000
+  }
+}

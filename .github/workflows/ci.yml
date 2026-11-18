@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  unit-and-ipc-tests:
+    name: Core & Localhost IPC Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install core package
+        run: pip install -e .
+      - name: Run Step-1 communication & multi-process IPC tests
+        run: |
+          python -m unittest tests.test_step1_comm_foundation -v
+          python -m unittest tests.test_contracts tests.test_planner tests.test_tool_layers tests.test_task_config -v
+
+  docs-build:
+    name: Bilingual Sphinx Docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Sphinx dependencies
+        run: pip install -r docs/requirements.txt
+      - name: Build English & Chinese documentation (strict mode)
+        run: |
+          sphinx-build -W --keep-going docs/source-en docs/build/html-en
+          sphinx-build -W --keep-going docs/source-zh docs/build/html-zh

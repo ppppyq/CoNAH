@@ -1,0 +1,5 @@
+# UI runs on Python 3.10+; Habitat keeps its separate existing environment.
+fastapi>=0.110,<1
+uvicorn>=0.27,<1
+prompt-toolkit>=3.0.48,<4
+requests>=2.31,<3

@@ -1,0 +1,11 @@
+{
+  "name": "find_vase",
+  "type": "object_navigation",
+  "platform": "hm3d_m3",
+  "episode_id": "00849-a8BtkwhxdRV_01257",
+  "agent_index": 0,
+  "goal_index": 1,
+  "expected_category": "vase",
+  "max_steps": 300,
+  "seed": 1123
+}

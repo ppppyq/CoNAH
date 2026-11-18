@@ -1,0 +1,94 @@
+"""Launch one HarnessVLN task session with isolated imports and owned outputs."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import signal
+import subprocess
+import sys
+import time
+
+
+def launch_single(config, run_dir, key, preflight=False):
+    from comm_harness.planner.model_config import require_vision_model
+    require_vision_model(config['planner']['model'])
+    root = Path(__file__).resolve().parents[2]
+    run_dir = Path(run_dir).resolve()
+    run_dir.mkdir(parents=True, exist_ok=False)
+    (run_dir / 'config.json').write_text(json.dumps(config, indent=2), encoding='utf-8')
+    if 'task_definition' in config:
+        (run_dir / 'task_definition.json').write_text(
+            json.dumps(config['task_definition'], indent=2), encoding='utf-8')
+    source_hashes = {
+        p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+        for parent in ('comm_harness', 'platforms', 'tasks')
+        if (root / parent).exists()
+        for p in (root / parent).rglob('*.py')
+    }
+    (run_dir / 'source_manifest.json').write_text(json.dumps(source_hashes, indent=2))
+    env = os.environ.copy()
+    env.update(MODEL_API_KEY=key, MODEL_BASE_URL=config['planner']['base_url'],
+               MODEL_NAME=config['planner']['model'],
+               MODEL_PROVIDER=config['planner'].get('provider', 'openai'),
+               MODEL_BBOX_SCALE=str(config['planner'].get('bbox_scale', 'pixel')),
+               MODEL_REQUEST_TIMEOUT=str(config['planner'].get('request_timeout_s', 120)),
+               OLLAMA_NUM_CTX=str(config['planner'].get('num_ctx', 32768)),
+               OLLAMA_NUM_PREDICT=str(config['planner'].get('num_predict', 2048)),
+               OLLAMA_SEED=str(config.get('seed', 1123)),
+               MODEL_TOKEN_PARAMETER='max_tokens',
+               COMM_HVL_MAX_CALLS=str(config['planner']['max_calls']),
+               COMM_HVL_MAX_TOKENS=str(config['planner']['max_total_tokens']),
+               BERT_LOCAL_PATH=str(Path(config['assets']) / 'bert-base-uncased'),
+               HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', TOKENIZERS_PARALLELISM='false',
+               EGL_PLATFORM='surfaceless', PYTHONUNBUFFERED='1')
+    env.pop('DISPLAY', None)
+    try:
+        driver = subprocess.check_output(['nvidia-smi', '--query-gpu=driver_version',
+                     '--format=csv,noheader'], text=True).splitlines()[0].strip()
+        egl = Path.home() / 'nvidia-egl' / ('NVIDIA-Linux-x86_64-' + driver)
+        if (egl / 'libEGL_nvidia.so.0').exists():
+            env['LD_LIBRARY_PATH'] = str(egl) + ':' + env.get('LD_LIBRARY_PATH', '')
+            env['__EGL_VENDOR_LIBRARY_DIRS'] = str(egl)
+    except (OSError, subprocess.SubprocessError, IndexError):
+        pass
+    command = [sys.executable, '-m', 'tasks.harness_vln.runner', '--run-dir', str(run_dir)]
+    if preflight:
+        command.append('--preflight')
+    started = time.monotonic()
+    with (run_dir / 'console.log').open('w', encoding='utf-8') as log:
+        process = subprocess.Popen(command, cwd=str(root), env=env, stdout=log, stderr=subprocess.STDOUT,
+                                   start_new_session=True)
+        print(json.dumps({'status': 'started', 'method': 'harness-vln', 'pid': process.pid,
+                          'run_dir': str(run_dir), 'goal_index': config['goal_index']}), flush=True)
+        try:
+            returncode = process.wait(timeout=config.get('timeout_s', 1200))
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGTERM)
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                process.wait(timeout=10)
+            (run_dir / 'failure.json').write_text(json.dumps({'status': 'timeout',
+                                               'elapsed_s': time.monotonic() - started}))
+            raise RuntimeError('Single-agent run exceeded its configured time limit: ' + str(run_dir))
+        except BaseException:
+            if process.poll() is None:
+                os.killpg(process.pid, signal.SIGTERM)
+                try:
+                    process.wait(timeout=10)
+                except subprocess.TimeoutExpired:
+                    os.killpg(process.pid, signal.SIGKILL)
+                    process.wait(timeout=10)
+            raise
+    if returncode:
+        if not (run_dir / 'failure.json').exists():
+            (run_dir / 'failure.json').write_text(json.dumps({'status': 'worker_exited',
+                'returncode': returncode, 'elapsed_s': time.monotonic() - started}))
+        print((run_dir / 'console.log').read_text(errors='replace')[-5000:])
+        raise RuntimeError('HarnessVLN worker failed; see ' + str(run_dir / 'failure.json'))
+    result_path = run_dir / ('preflight.json' if preflight else 'result.json')
+    result = json.loads(result_path.read_text())
+    print(json.dumps({'status': 'preflight_passed' if preflight else 'finished',
+                      'run_dir': str(run_dir), 'result': result}, ensure_ascii=False), flush=True)
+    return result

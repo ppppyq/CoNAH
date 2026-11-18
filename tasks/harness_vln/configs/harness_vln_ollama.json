@@ -1,0 +1,23 @@
+{
+  "method": "harness-vln",
+  "episodes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/datasets/ma_objectnav_ovon/val_unseen/ma_official_mini_100_samefloor_mixed3_kmquota_seed1123.json",
+  "scenes": "/home/pyq/hm3d_m3_repro/hm3d-m3-code/sim-code/data/scene_datasets/hm3d-1.0/hm3d_v0.2",
+  "assets": "/home/pyq/hm3d_m3_repro/harnessvln-code/data/grounded_sam",
+  "asset_manifest": "/home/pyq/hm3d_m3_repro/harness-assets.json",
+  "timeout_s": 1800,
+  "max_gpu_memory_gb": 5,
+  "planner": {
+    "provider": "ollama",
+    "model": "qwen3.8:27b",
+    "base_url": "http://127.0.0.1:11436",
+    "model_host": "10.249.42.188",
+    "bbox_scale": 1000,
+    "num_ctx": 32768,
+    "num_predict": 2048,
+    "max_images_per_request": 8,
+    "request_timeout_s": 240,
+    "max_calls": 60,
+    "max_total_tokens": 300000
+  },
+  "task_file": "find_vase.json"
+}

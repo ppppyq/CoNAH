@@ -1,0 +1,466 @@
+[
+  {
+    "source": "vlnce_baselines/agent.py",
+    "destination": "comm_harness/planner/harness_vln/agent.py",
+    "source_sha256": "fca349e237ce7223e121b1a91898a455d6a6313726d158ed9f897c83d6ac1879",
+    "relocated_sha256": "496defb9e84c041d61c6d1cfe529ae837b9a83ac7eb836ce36aa3df04bf9b39f",
+    "initial_relocated_sha256": "6eec9fe6c408d1d7198d201ab16c2b2a983d085cf8e7e712bd6ae7fb92830597"
+  },
+  {
+    "source": "vlnce_baselines/config/default.py",
+    "destination": "platforms/hm3d_m3/harness_vln/config.py",
+    "source_sha256": "66dcb3316db12fbfa29f3b7e12bad34dd7023ead0095ee3dd2c2ea33b71e3715",
+    "relocated_sha256": "c9fb20b72f3717f8f33646f1df1d770bdaf613df93732d5fa09c651d9766e233",
+    "initial_relocated_sha256": "c9fb20b72f3717f8f33646f1df1d770bdaf613df93732d5fa09c651d9766e233"
+  },
+  {
+    "source": "vlnce_baselines/env/env_utils.py",
+    "destination": "platforms/hm3d_m3/harness_vln/env_utils.py",
+    "source_sha256": "ed11837e114291c155775716d582d8c039592a58ed7d90080bd2bf9af32f33d2",
+    "relocated_sha256": "bb13f0f511025879253a26a532cf95c9dacf4757f464a3d085ea0a9d86e30cbc",
+    "initial_relocated_sha256": "bb13f0f511025879253a26a532cf95c9dacf4757f464a3d085ea0a9d86e30cbc"
+  },
+  {
+    "source": "vlnce_baselines/env/environments.py",
+    "destination": "platforms/hm3d_m3/harness_vln/environments.py",
+    "source_sha256": "ee3e1ef41e358af10df3ad40996177cb98795e8766542ed83d61bd76c503206a",
+    "relocated_sha256": "7d32587fba87ff222a029b7260a3b1465c5bb28bc3c7ee9366fec7a502c15b66",
+    "initial_relocated_sha256": "7d32587fba87ff222a029b7260a3b1465c5bb28bc3c7ee9366fec7a502c15b66"
+  },
+  {
+    "source": "vlnce_baselines/harness/__init__.py",
+    "destination": "comm_harness/session/harness_vln/__init__.py",
+    "source_sha256": "82c953c8dd67bdef0ced2828e85bb78341dc1e0528cf1ab323aee961c25f55f2",
+    "relocated_sha256": "4d669d41fbcad4a2f7cc6c1013ac5255f471da6832da5047f200ea6d850c25fa",
+    "initial_relocated_sha256": "f328862e83e067039d1829982f959105b8e37c47433166d541575bfa194cdfe8"
+  },
+  {
+    "source": "vlnce_baselines/harness/contracts.py",
+    "destination": "comm_harness/tools/contracts.py",
+    "source_sha256": "667cea4ef740096e61f9b32e094a92c560a1e7863e25afc0abae309751909c10",
+    "relocated_sha256": "ff3a36b4ef1599789b85c715d7230dc6548d89f1340664a581d06a618cbfa09b",
+    "initial_relocated_sha256": "500f74fc173287768e323f0b9bfe15c25858c1c582481e6ea73862a32640d428",
+    "previous_destination": "comm_harness/tools/harness_vln/contracts.py"
+  },
+  {
+    "source": "vlnce_baselines/harness/geometry.py",
+    "destination": "comm_harness/platforms/geometry.py",
+    "source_sha256": "100f99b211749e286c2ec6d23c64525e675da81beb8e4c67d180e7880679954e",
+    "relocated_sha256": "475c15886ab35d3ee9efbd86091037de1370af4287688f5ab06c7b90f6e87636",
+    "initial_relocated_sha256": "475c15886ab35d3ee9efbd86091037de1370af4287688f5ab06c7b90f6e87636",
+    "previous_destination": "comm_harness/tools/harness_vln/geometry.py"
+  },
+  {
+    "source": "vlnce_baselines/harness/panorama.py",
+    "destination": "platforms/hm3d_m3/harness_vln/panorama.py",
+    "source_sha256": "afdb72b3491b8338d377f05fb37bb69667c8b12e9e29fedb78de72b77e2618a2",
+    "relocated_sha256": "8caf4696a8d50e1bebdfc586caa703fd7e381dc563ecf6f1829fafb9437e5905",
+    "initial_relocated_sha256": "7d9bace6ee103287c657c4ef28a24697965330902b869430f632e10434a473e4",
+    "previous_destination": "comm_harness/tools/harness_vln/panorama.py"
+  },
+  {
+    "source": "vlnce_baselines/harness/registry.py",
+    "destination": "comm_harness/tools/registry.py",
+    "source_sha256": "2e938adc88c434a7a761545dbe09494dddbe3d33bfadb3cfa3cab2cfb285c038",
+    "relocated_sha256": "6fb28a216e2c20fecd006e102fcdcb802a2dca9cba157da18211a16eb1c0c950",
+    "initial_relocated_sha256": "4393c8f435b1703d8dbc8500097026ac746a2d4038ecbbc90864d30b29400a15",
+    "previous_destination": "comm_harness/tools/harness_vln/registry.py",
+    "extracted_implementations": [
+      {
+        "destination": "comm_harness/session/object_navigation.py",
+        "sha256": "bb117fd751f73a7cf179a9ca8767f934f77a5926bb8a8d4d20338855eb8c2c65"
+      },
+      {
+        "destination": "platforms/hm3d_m3/tools.py",
+        "sha256": "7fa15efea744b361b2f063e35c608328d0e139b8514f841bf76f1eab157396b5"
+      }
+    ]
+  },
+  {
+    "source": "vlnce_baselines/harness/retrieval.py",
+    "destination": "comm_harness/session/harness_vln/retrieval.py",
+    "source_sha256": "c6da0a991a1b94910df42d55a7cb5def317b84c0a55f4f6e67c761c6d9ea9d3f",
+    "relocated_sha256": "0145810c0b6d09c57162acb3e0eaacdca720d39c15d1c0c5bdbf90550be5c231",
+    "initial_relocated_sha256": "0145810c0b6d09c57162acb3e0eaacdca720d39c15d1c0c5bdbf90550be5c231"
+  },
+  {
+    "source": "vlnce_baselines/harness/runtime.py",
+    "destination": "comm_harness/tools/runtime.py",
+    "source_sha256": "3662ea5a421cac6d3431ea6aa62697d4dc57faf8e98edee37d8b4749c2f237ed",
+    "relocated_sha256": "54112c464db6b50e25320fcaddb04cc4674450cc3e59866565465e2a4316c1d3",
+    "initial_relocated_sha256": "f0229bd993bc73f82d589b30870f119597a964a9d00aa54796e3762114d6aaa4",
+    "previous_destination": "comm_harness/tools/harness_vln/runtime.py"
+  },
+  {
+    "source": "vlnce_baselines/harness/state.py",
+    "destination": "comm_harness/session/harness_vln/state.py",
+    "source_sha256": "2c7c835f05fc22201b9a1490074f81dd975cf19e80477e965c6f5b6a226e1ea5",
+    "relocated_sha256": "ee26fd4ac40701172003b39fe5664ac831cabf48e7e3adc89303fdd6105c3af8",
+    "initial_relocated_sha256": "ee26fd4ac40701172003b39fe5664ac831cabf48e7e3adc89303fdd6105c3af8"
+  },
+  {
+    "source": "vlnce_baselines/harness/todo.py",
+    "destination": "comm_harness/session/harness_vln/todo.py",
+    "source_sha256": "b2a30c9c693a1cae9380718bb219e5fa372a930332de68e15846e30ae424441e",
+    "relocated_sha256": "2878de5966fdcbb911bc7cc6fa4474c08d61b38d74a6904441b018ffba11fb7b",
+    "initial_relocated_sha256": "2878de5966fdcbb911bc7cc6fa4474c08d61b38d74a6904441b018ffba11fb7b"
+  },
+  {
+    "source": "vlnce_baselines/harness/trace.py",
+    "destination": "comm_harness/session/harness_vln/trace.py",
+    "source_sha256": "bfd054088d07ad7043886d15ab613b1bf99e079d70cc44f8ac294a6e861d7e9b",
+    "relocated_sha256": "8ee84e4cf1d62de2d9ba9bd8ea3ee26f7f300334e627d8b30e5c451523af1578",
+    "initial_relocated_sha256": "8ee84e4cf1d62de2d9ba9bd8ea3ee26f7f300334e627d8b30e5c451523af1578"
+  },
+  {
+    "source": "vlnce_baselines/harness/world_graph.py",
+    "destination": "comm_harness/session/harness_vln/world_graph.py",
+    "source_sha256": "ba276ecfed94bff8ea683a1116ac5a1e7ae6ab33f39b9949fe768feb30da4b08",
+    "relocated_sha256": "4fc28abf51ca49fd9806fb09c604eac7bc6cca1233ff94cf5d96d21c4c305645",
+    "initial_relocated_sha256": "4fc28abf51ca49fd9806fb09c604eac7bc6cca1233ff94cf5d96d21c4c305645"
+  },
+  {
+    "source": "vlnce_baselines/harness_runtime.py",
+    "destination": "comm_harness/tools/harness_vln/compat.py",
+    "source_sha256": "8a01fe2c2b79d37045d3c6ecc14064a531940c342fec46dc7ed696924c1b3f3e",
+    "initial_relocated_sha256": "405812175ca60f65af1abda1a61370d3264d47513bd9dccddb8f6f5eecdba620",
+    "status": "removed",
+    "replacements": [
+      "comm_harness/tools/contracts.py",
+      "comm_harness/tools/runtime.py"
+    ],
+    "last_relocated_sha256": "405812175ca60f65af1abda1a61370d3264d47513bd9dccddb8f6f5eecdba620"
+  },
+  {
+    "source": "vlnce_baselines/map/mapping.py",
+    "destination": "platforms/hm3d_m3/harness_vln/mapping.py",
+    "source_sha256": "7b9591c76ea8b94df26725217da7e53db7f2c34ca43b9217b33ae6882cbff8aa",
+    "relocated_sha256": "27231e400baf2be4888771f8dfebcf53e20cb2f10e2d0a1bbacb8158f7057ffc",
+    "initial_relocated_sha256": "27231e400baf2be4888771f8dfebcf53e20cb2f10e2d0a1bbacb8158f7057ffc"
+  },
+  {
+    "source": "vlnce_baselines/map/RepViTSAM/repvit.py",
+    "destination": "platforms/hm3d_m3/harness_vln/repvit.py",
+    "source_sha256": "8306acbc1f52e73b203e3806b9f64192bd77dbbfde35374b587886942291e7ef",
+    "relocated_sha256": "0e950b1783b09b7ae3b3c517e956ef864c79228e889f1d8827f47a9151fae0fc",
+    "initial_relocated_sha256": "0e950b1783b09b7ae3b3c517e956ef864c79228e889f1d8827f47a9151fae0fc"
+  },
+  {
+    "source": "vlnce_baselines/map/RepViTSAM/setup_repvit_sam.py",
+    "destination": "platforms/hm3d_m3/harness_vln/setup_repvit_sam.py",
+    "source_sha256": "aebf86837338ff15b9d4ac12c66b17dde3b0de42216ab8b8584f1a8b1757b1e7",
+    "relocated_sha256": "bd778036400f5a5e106f88809d8db0c4c9503cf60c1c19d8fe24dbf24c861f7c",
+    "initial_relocated_sha256": "bd778036400f5a5e106f88809d8db0c4c9503cf60c1c19d8fe24dbf24c861f7c"
+  },
+  {
+    "source": "vlnce_baselines/map/semantic_prediction.py",
+    "destination": "platforms/hm3d_m3/harness_vln/semantic_prediction.py",
+    "source_sha256": "230551763266e64688f05b4461d1babff829df5b5c019dbda7f7c788086f8959",
+    "relocated_sha256": "8c6736f96217f81001938b066156663e7c4b293233ed62d674e1dcc71a3b76d7",
+    "initial_relocated_sha256": "4ca628e223ce2692319e473fbe53d554812f26e99c6e44daa3c0c5b9d08c5997"
+  },
+  {
+    "source": "vlnce_baselines/model_config.py",
+    "destination": "comm_harness/planner/harness_vln/model_config.py",
+    "source_sha256": "6326be042db87bf8a902b605524bd95bb41454e0486a1a4602d062cfff8406c0",
+    "relocated_sha256": "b0331f6bfcf7a655200aec162664e1bf71926a563d8b93b9044f8ad8db9b0a6c",
+    "initial_relocated_sha256": "5e5d32c11592324954273f2be9610e24d6c83af5b3ef601cad4bc36c0403ca94"
+  },
+  {
+    "source": "vlnce_baselines/models/fmm_planner.py",
+    "destination": "platforms/hm3d_m3/harness_vln/fmm_planner.py",
+    "source_sha256": "77665980458d54e89a2005823419bea86498a55e7aa146ebe325605e50912740",
+    "relocated_sha256": "9a4ac68fc2ef8716fd3beacc67ece4f479b48db803f91ee0289e46a9e3cae89e",
+    "initial_relocated_sha256": "9a4ac68fc2ef8716fd3beacc67ece4f479b48db803f91ee0289e46a9e3cae89e"
+  },
+  {
+    "source": "vlnce_baselines/models/Policy.py",
+    "destination": "platforms/hm3d_m3/harness_vln/policy.py",
+    "source_sha256": "44935d14c6377f4aab0574275a9782433e037ecbd8766ca7fa1ddbc1c7f04854",
+    "relocated_sha256": "890cce39c6c200010e9e8a35277387226d6c43265e3809efa6e71ba4b7f7ab27",
+    "initial_relocated_sha256": "890cce39c6c200010e9e8a35277387226d6c43265e3809efa6e71ba4b7f7ab27"
+  },
+  {
+    "source": "vlnce_baselines/models/super_pixel_policy.py",
+    "destination": "platforms/hm3d_m3/harness_vln/super_pixel_policy.py",
+    "source_sha256": "c4c2b376e98ef3a805f60f13f9afecf58abb25ca751c2dc76d62586c4e1f5742",
+    "relocated_sha256": "024c451fa964d87f027d722247762f28ae967ff58f9cb502b2771e8e28282666",
+    "initial_relocated_sha256": "024c451fa964d87f027d722247762f28ae967ff58f9cb502b2771e8e28282666"
+  },
+  {
+    "source": "vlnce_baselines/models/superpixel_waypoint_selector.py",
+    "destination": "platforms/hm3d_m3/harness_vln/superpixel_waypoint_selector.py",
+    "source_sha256": "d938109fcdc0c46c028a7d6c1be04de33260ba65cf64f3bedbdbc3c851b8f93a",
+    "relocated_sha256": "0f591c110383420665204c3e39013b1d8d7552d45bae972a0ae43233e55659b3",
+    "initial_relocated_sha256": "0f591c110383420665204c3e39013b1d8d7552d45bae972a0ae43233e55659b3"
+  },
+  {
+    "source": "vlnce_baselines/objnav_categories.py",
+    "destination": "comm_harness/planner/harness_vln/categories.py",
+    "source_sha256": "fc1109dc038951eb0403ffe323850793e98640afb00880a7c7694c6a12262e37",
+    "relocated_sha256": "ee90f1ea12ae24f3f372540455db1df425eee39da0c5c6f8d3cc96602def44c7",
+    "initial_relocated_sha256": "ee90f1ea12ae24f3f372540455db1df425eee39da0c5c6f8d3cc96602def44c7"
+  },
+  {
+    "source": "vlnce_baselines/prompts/__init__.py",
+    "destination": "comm_harness/planner/harness_vln/prompts.py",
+    "source_sha256": "e8801b97f712afd219622e8e292a8625f8d16972025dd9d9411d6201ef3cda57",
+    "relocated_sha256": "37bb3f33094d03c25a1d8a9c1ec029d57c4b3b15fcb2deeaa05e30c276831113",
+    "initial_relocated_sha256": "37bb3f33094d03c25a1d8a9c1ec029d57c4b3b15fcb2deeaa05e30c276831113"
+  },
+  {
+    "source": "vlnce_baselines/prompts/prompts_objnav.py",
+    "destination": "comm_harness/planner/harness_vln/prompts_objnav.py",
+    "source_sha256": "5a82b9e84e790ecb0ba9232a0bcf47eebe181b60288ad96ea1713a60cbf0ac9e",
+    "relocated_sha256": "f67283f5d90392d076f14c43ce2f84fdceefee1fc7b13fa82e19c224a1e85a9a",
+    "initial_relocated_sha256": "035109e87ff2efe2299163bb79b906db3ac842eb778518bae6a90c57ef77c0c1"
+  },
+  {
+    "source": "vlnce_baselines/prompts/prompts_vln.py",
+    "destination": "comm_harness/planner/harness_vln/prompts_vln.py",
+    "source_sha256": "b680b0a146885f7f1c1e623c6d634d73d85991ffc604356d60d3347e939dc458",
+    "relocated_sha256": "9519139a2fb6510689f4c853cf40b2679cda7b352fb9eb005bbc3288fc9f52f3",
+    "initial_relocated_sha256": "9519139a2fb6510689f4c853cf40b2679cda7b352fb9eb005bbc3288fc9f52f3"
+  },
+  {
+    "source": "vlnce_baselines/tasks.py",
+    "destination": "platforms/hm3d_m3/harness_vln/tasks.py",
+    "source_sha256": "ddc609a8fb0f4cabe97a603910f34eb7478783fe9ef3505dd5ef4bf1c01bae28",
+    "relocated_sha256": "e4e6828df8a8a0406d51fff13405797859eae5a0de2ecff29029e5385d658130",
+    "initial_relocated_sha256": "8bf3437286033013d0a173471007038bb076a8de978f15b518f691e75a8f7146"
+  },
+  {
+    "source": "vlnce_baselines/usage.py",
+    "destination": "comm_harness/planner/harness_vln/usage.py",
+    "source_sha256": "2ae79d680757db9bd9c014925a7de12873aa5bd12980ed226af00778143dac8e",
+    "relocated_sha256": "58565beaa563bc96f2268fa4330dc62ce3f9377e69d436842b341f1409d2cff3",
+    "initial_relocated_sha256": "58565beaa563bc96f2268fa4330dc62ce3f9377e69d436842b341f1409d2cff3"
+  },
+  {
+    "source": "vlnce_baselines/utils/acyclic_enforcer.py",
+    "destination": "platforms/hm3d_m3/harness_vln/acyclic_enforcer.py",
+    "source_sha256": "349dc57d4f07bf39893381b54de806e44fc61cc25f3f27da99e68b472e7296ee",
+    "relocated_sha256": "39e8d3f827b8c7c109e5a67199ebd8d51dd5efb7bc0cf6244cb7aec78c422745",
+    "initial_relocated_sha256": "39e8d3f827b8c7c109e5a67199ebd8d51dd5efb7bc0cf6244cb7aec78c422745"
+  },
+  {
+    "source": "vlnce_baselines/utils/api.py",
+    "destination": "comm_harness/planner/harness_vln/model_client.py",
+    "source_sha256": "b44f81cbc528d3384fa9f2a9528c254e10de9997ed40ebae4b6b9269feac9e0e",
+    "relocated_sha256": "b197d6f00709bfa5b79c4dca51097c3a8f78d3eaf1c73f46da00742d9fdd080a",
+    "initial_relocated_sha256": "8d276131c1976476e3cc5f96089ea1ba69e8810e334f26e7e03716a389abd5ca"
+  },
+  {
+    "source": "vlnce_baselines/utils/constant.py",
+    "destination": "platforms/hm3d_m3/harness_vln/constant.py",
+    "source_sha256": "9800ad4c28d9693c4d6b2899d058fb4876e7c662796f77fb5c340fbc5089662b",
+    "relocated_sha256": "463e89a8af733375965c2cdc4e636e2ab8fdc57bee205904bfeb6b35c22ce3b9",
+    "initial_relocated_sha256": "463e89a8af733375965c2cdc4e636e2ab8fdc57bee205904bfeb6b35c22ce3b9"
+  },
+  {
+    "source": "vlnce_baselines/utils/data_utils.py",
+    "destination": "platforms/hm3d_m3/harness_vln/data_utils.py",
+    "source_sha256": "3e6439b773e5ebea9b7748cb9a1d03da0c9f41d67f3af327efe27be0dc26f8ed",
+    "relocated_sha256": "711e33a424a591c0b688f68b9546c398f7d8d2d87604cc0d8af08a386f1adc31",
+    "initial_relocated_sha256": "711e33a424a591c0b688f68b9546c398f7d8d2d87604cc0d8af08a386f1adc31"
+  },
+  {
+    "source": "vlnce_baselines/utils/depth_utils.py",
+    "destination": "platforms/hm3d_m3/harness_vln/depth_utils.py",
+    "source_sha256": "ac7ebdc1b426f89e14cfd1aab4221f380042c3308157ea5df832853c8e3d3298",
+    "relocated_sha256": "5f82c5d5e40cfd1eec53b139c601901137d5a4c9f2dc547cc206e37e1f2b73e5",
+    "initial_relocated_sha256": "5f82c5d5e40cfd1eec53b139c601901137d5a4c9f2dc547cc206e37e1f2b73e5"
+  },
+  {
+    "source": "vlnce_baselines/utils/map_utils.py",
+    "destination": "platforms/hm3d_m3/harness_vln/map_utils.py",
+    "source_sha256": "c6e7c52c3055ce3885d737303d69aa10aa6f336816075ca91334ed3445e3078d",
+    "relocated_sha256": "55a56d5e434c782c6d950f8c2e20f267aa9b9d87b2a0e8d9c121f8ce30762d97",
+    "initial_relocated_sha256": "55a56d5e434c782c6d950f8c2e20f267aa9b9d87b2a0e8d9c121f8ce30762d97"
+  },
+  {
+    "source": "vlnce_baselines/utils/misc.py",
+    "destination": "platforms/hm3d_m3/harness_vln/misc.py",
+    "source_sha256": "e2a6abf0197701c0e9347a4009494a10138b97791e800ba1a7391f131ea40d55",
+    "relocated_sha256": "1424e3159906b21d8a151523e9d567df68ffc1627679dac50f3f8e3d52e6a235",
+    "initial_relocated_sha256": "1424e3159906b21d8a151523e9d567df68ffc1627679dac50f3f8e3d52e6a235"
+  },
+  {
+    "source": "vlnce_baselines/utils/pose.py",
+    "destination": "platforms/hm3d_m3/harness_vln/pose.py",
+    "source_sha256": "a069c67558977feef28cb293618f5d322d999b13b20837b610bf39daa6aa5a7c",
+    "relocated_sha256": "d2b8eb6fcf007896f526978700f64d0e68aa4205f568b427f6a0662d772ae58e",
+    "initial_relocated_sha256": "d2b8eb6fcf007896f526978700f64d0e68aa4205f568b427f6a0662d772ae58e"
+  },
+  {
+    "source": "vlnce_baselines/utils/rotation_utils.py",
+    "destination": "platforms/hm3d_m3/harness_vln/rotation_utils.py",
+    "source_sha256": "ae47b1b8aea80221ca426181b2d46bb9bd80c5fabcd073d465605cd188811993",
+    "relocated_sha256": "10a911727d36c41b84215c938186076a3b465f01e99e45073d1793239858308b",
+    "initial_relocated_sha256": "10a911727d36c41b84215c938186076a3b465f01e99e45073d1793239858308b"
+  },
+  {
+    "source": "vlnce_baselines/utils/stats.py",
+    "destination": "comm_harness/session/harness_vln/stats.py",
+    "source_sha256": "a169ec5d3094d23d184873f74ef326375ace9ec14fe88cf4a98f7a62209cdd95",
+    "relocated_sha256": "72c21c1a3b3c77ede1848c77e71c49c85506a7e4bd8955f001cb443d9541df66",
+    "initial_relocated_sha256": "72c21c1a3b3c77ede1848c77e71c49c85506a7e4bd8955f001cb443d9541df66"
+  },
+  {
+    "source": "vlnce_baselines/utils/visualization.py",
+    "destination": "platforms/hm3d_m3/harness_vln/visualization.py",
+    "source_sha256": "16490cd827d8cd33430b264fa55c3bac7a564637964fc78762a2febd55ff3323",
+    "relocated_sha256": "3b2e613fea074b474612a51bb45911d02ae00bf54d92d9f7c25a4732f2a40fb4",
+    "initial_relocated_sha256": "3b2e613fea074b474612a51bb45911d02ae00bf54d92d9f7c25a4732f2a40fb4"
+  },
+  {
+    "source": "vlnce_baselines/ZS_Evaluator_mp.py",
+    "destination": "comm_harness/session/harness_vln/evaluator.py",
+    "source_sha256": "ce5f4fabfee15d229ed78c86f68fc0ced82dbf2dcb3014324578c0823b8f0b56",
+    "relocated_sha256": "4a8d01eb9bb45bb60503ad6cd0eb623dc72572319e738742f1bde5dc2e182cce",
+    "initial_relocated_sha256": "014bf9646e9ee87e30728f31aa4f95106157e67928c771b45d8edad3430c2264",
+    "extracted_implementations": [
+      {
+        "destination": "comm_harness/session/object_navigation.py",
+        "sha256": "bb117fd751f73a7cf179a9ca8767f934f77a5926bb8a8d4d20338855eb8c2c65"
+      },
+      {
+        "destination": "platforms/hm3d_m3/tools.py",
+        "sha256": "7fa15efea744b361b2f063e35c608328d0e139b8514f841bf76f1eab157396b5"
+      }
+    ]
+  },
+  {
+    "source": "habitat_extensions/__init__.py",
+    "destination": "platforms/hm3d_m3/habitat/__init__.py",
+    "source_sha256": "8f01d9602a6f848776f61bb232c20649658f4f7685965e7c00126b3097893131",
+    "relocated_sha256": "9658d23f2b071c061c62d8afa06eb1b86d241a33918e8a438a8f25e965e89ab6",
+    "initial_relocated_sha256": "9658d23f2b071c061c62d8afa06eb1b86d241a33918e8a438a8f25e965e89ab6"
+  },
+  {
+    "source": "habitat_extensions/config/__init__.py",
+    "destination": "platforms/hm3d_m3/habitat/config/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "relocated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "initial_relocated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "habitat_extensions/config/default.py",
+    "destination": "platforms/hm3d_m3/habitat/config/default.py",
+    "source_sha256": "7633dcc431645322a8e263bc824afe02a772ba25d12f80cf7d4669914180ea74",
+    "relocated_sha256": "a2276b5a293012b8a1ec41478b9ab85be58e226f372bca497034b862a14e2227",
+    "initial_relocated_sha256": "a2276b5a293012b8a1ec41478b9ab85be58e226f372bca497034b862a14e2227"
+  },
+  {
+    "source": "habitat_extensions/habitat_simulator.py",
+    "destination": "platforms/hm3d_m3/habitat/habitat_simulator.py",
+    "source_sha256": "310536a47847ae5ed0230702afeee0c13b2c7dd7f0068556c818366a8cdff47e",
+    "relocated_sha256": "0d7c1093ee98042c15db24ea53d4aa9d69302e588c3630388d2a428ad6af4d8f",
+    "initial_relocated_sha256": "0d7c1093ee98042c15db24ea53d4aa9d69302e588c3630388d2a428ad6af4d8f"
+  },
+  {
+    "source": "habitat_extensions/maps.py",
+    "destination": "platforms/hm3d_m3/habitat/maps.py",
+    "source_sha256": "0fcd3e58ad4f583ffd34fcc8dcac07580785822bf2330e2b892282d33431e194",
+    "relocated_sha256": "40e30d8656111492e9419aae50978b3a55c8cde35fc9e0dd10068face5820670",
+    "initial_relocated_sha256": "40e30d8656111492e9419aae50978b3a55c8cde35fc9e0dd10068face5820670"
+  },
+  {
+    "source": "habitat_extensions/measures.py",
+    "destination": "platforms/hm3d_m3/habitat/measures.py",
+    "source_sha256": "2bf215505ca413624bc43c923a14f55adf9bfd7abf60321e98b2401c062e9d5c",
+    "relocated_sha256": "8e9df4d0852c3ae3398c59cbda97225d7288b09fcc8f3e2b343f4b4ff8562de6",
+    "initial_relocated_sha256": "8e9df4d0852c3ae3398c59cbda97225d7288b09fcc8f3e2b343f4b4ff8562de6"
+  },
+  {
+    "source": "habitat_extensions/pose_utils.py",
+    "destination": "platforms/hm3d_m3/habitat/pose_utils.py",
+    "source_sha256": "08c70e84a2ff32105668449e2351f56af6bf5c74608f0db70367b0eb0828153e",
+    "relocated_sha256": "ac555f32d80a6e73bf2f61622dde3f4fda81e7fdd7f7c69a89986d4364a73327",
+    "initial_relocated_sha256": "ac555f32d80a6e73bf2f61622dde3f4fda81e7fdd7f7c69a89986d4364a73327"
+  },
+  {
+    "source": "habitat_extensions/sensors.py",
+    "destination": "platforms/hm3d_m3/habitat/sensors.py",
+    "source_sha256": "295bcc41ac138b1a4409b51f40a97f8b4d8690ff44b21dfe21c05e6c346b2fc4",
+    "relocated_sha256": "257dc81d7b9e912258188af3d81022621b2768f374ad0165667c5500e8295200",
+    "initial_relocated_sha256": "257dc81d7b9e912258188af3d81022621b2768f374ad0165667c5500e8295200"
+  },
+  {
+    "source": "habitat_extensions/task.py",
+    "destination": "platforms/hm3d_m3/habitat/task.py",
+    "source_sha256": "2a24ad08d11a863d41d1f7fc611a0e0aef5baaebb1119e6162f5fdb24c9b7e8f",
+    "relocated_sha256": "8dfd16ec7e976d16b8e07db1c7813d8cad8dfcbddc872dac76ff5ce8eaf39013",
+    "initial_relocated_sha256": "8dfd16ec7e976d16b8e07db1c7813d8cad8dfcbddc872dac76ff5ce8eaf39013"
+  },
+  {
+    "source": "habitat_extensions/config/objectnav_mp3d.yaml",
+    "destination": "platforms/hm3d_m3/habitat/config/objectnav_mp3d.yaml",
+    "source_sha256": "4cc8e8a9d450afa584518b744231deab4426baee3210a5b68675ea865596d812",
+    "relocated_sha256": "ef199d2edfbe34ed64929b5807bac32b26df05f7a0d67be7e55c10413927166e",
+    "initial_relocated_sha256": "ef199d2edfbe34ed64929b5807bac32b26df05f7a0d67be7e55c10413927166e"
+  },
+  {
+    "source": "habitat_extensions/config/objectnav_ovon.yaml",
+    "destination": "platforms/hm3d_m3/habitat/config/objectnav_ovon.yaml",
+    "source_sha256": "830187056978a2fee11907d9dbb503774d9bbaf2d7f499d6bad1e7343ab9eea8",
+    "relocated_sha256": "584bccca4445e5968e5a4c7f7840273b551e7fed72b418c71de80a8bebd3e98b",
+    "initial_relocated_sha256": "584bccca4445e5968e5a4c7f7840273b551e7fed72b418c71de80a8bebd3e98b"
+  },
+  {
+    "source": "habitat_extensions/config/objectnav_v2.yaml",
+    "destination": "platforms/hm3d_m3/habitat/config/objectnav_v2.yaml",
+    "source_sha256": "0bf946170b6aacb42f3b7ce46e9e43caece4bbba9df65c89f8c022eda73ccc2f",
+    "relocated_sha256": "3f8a272b87919525c9a0bc3d1ea7de8dd72fa4507d4a4929b24aab798339b5b1",
+    "initial_relocated_sha256": "3f8a272b87919525c9a0bc3d1ea7de8dd72fa4507d4a4929b24aab798339b5b1"
+  },
+  {
+    "source": "habitat_extensions/config/r2r.yaml",
+    "destination": "platforms/hm3d_m3/habitat/config/r2r.yaml",
+    "source_sha256": "58279aa8bdac32cf060976fab63f537764a9822b34ba9bd338bbe8e063e780d3",
+    "relocated_sha256": "3ce6039b79bb949794ae516d76aa88d0873bcaeefa0597bdf4ae104594751042",
+    "initial_relocated_sha256": "3ce6039b79bb949794ae516d76aa88d0873bcaeefa0597bdf4ae104594751042"
+  },
+  {
+    "source": "habitat_extensions/config/rxr.yaml",
+    "destination": "platforms/hm3d_m3/habitat/config/rxr.yaml",
+    "source_sha256": "34dcc582e1bb18aae9b054dc9e2f7e08ea9632b9362a4bda6725cfedd448d04c",
+    "relocated_sha256": "453ce249c6875b2e237002ff2b04e92d687366b3e575b5e70ba1e5ecfbc029a8",
+    "initial_relocated_sha256": "453ce249c6875b2e237002ff2b04e92d687366b3e575b5e70ba1e5ecfbc029a8"
+  },
+  {
+    "source": "vlnce_baselines/config/objectnav_v2.yaml",
+    "destination": "examples/harness_vln_objectnav.yaml",
+    "source_sha256": "75e55e636b0934ec5116f2dac47bf16b1d632102ba995905c81e59a172b328eb",
+    "relocated_sha256": "3f3eae805168076737c43e0cb821910a5e9dc0b4a9d66ceec0f59b04fe70f921",
+    "initial_relocated_sha256": "3f3eae805168076737c43e0cb821910a5e9dc0b4a9d66ceec0f59b04fe70f921"
+  },
+  {
+    "source": "LICENSE",
+    "destination": "HARNESS_VLN_LICENSE",
+    "source_sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+    "relocated_sha256": "616cfe2a42f376776d08de3c361320e0e10d27388495d331d586540d05a59f8e",
+    "initial_relocated_sha256": "616cfe2a42f376776d08de3c361320e0e10d27388495d331d586540d05a59f8e"
+  },
+  {
+    "source": "THIRD_PARTY.md",
+    "destination": "HARNESS_VLN_THIRD_PARTY.md",
+    "source_sha256": "0e9451e0c73d54472c787143496d4dacd20b441ae6fbd13243c5002c327f28ea",
+    "relocated_sha256": "7fb5eb869eeaea12bc5d346d8ff2f9c6f689806af6a11beab4defbddcbaa9a4a",
+    "initial_relocated_sha256": "7871c9de3cc01bc3f876eb2b0e3495cfd88e371c2bf2693d88e3f0a56b4a9c0c"
+  },
+  {
+    "source": "tests/test_harness_package.py",
+    "destination": "tests/test_harness_vln_package.py",
+    "source_sha256": "a1e1e862c671a235ebdbe362e97c368d0e38e8fd4d0468595786bf5554f4872f",
+    "relocated_sha256": "e714586850b991eba4247eaf0428cf59afc6c1c414bd4caf7080e68b6836a305",
+    "initial_relocated_sha256": "6416951611fba4f4f6ae89cc75f24983b1d25e3cdfcb5de56816fcfe22d42c3f"
+  },
+  {
+    "source": "tests/test_harness_runtime.py",
+    "destination": "tests/test_harness_vln_runtime.py",
+    "source_sha256": "d38cbab43211cb8d88e980010b9d7ee129896d39e2bf8167df0ff460e14b618f",
+    "relocated_sha256": "93505cc6bcdcece5f7cfc631a194d4ab131407ad273226e120ec1a8809fb19cd",
+    "initial_relocated_sha256": "bb8fdedccf002ef1387d8ed4061ff5f40112b4004b03769169977659c62860aa"
+  }
+]
