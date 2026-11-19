@@ -6,7 +6,7 @@ HM3D-M³ 3D Collaborative VLN
 Key Capabilities
 -----------------
 
-1. **Shared GPU Open-Vocabulary Perception (``SharedGroundedSAM``)**: Thread-locked weight sharing across ``N`` robots (~1.8 GB peak VRAM).
+1. **Shared GPU Open-Vocabulary Perception (SharedGroundedSAM)**: Thread-locked weight sharing across ``N`` robots (~1.8 GB peak VRAM).
 2. **Dynamic Task Board & Goal Relay**: Automatic ``PENDING -> IN_PROGRESS -> FOUND`` relay and ``N > M`` co-search.
 3. **Cross-Robot 3D Sighting & SE(2) FMM Projection**: Opportunistic target detections are unprojected to global 3D XZ coordinates, broadcast via ``OBJECT_SIGHTING``, and transformed directly into teammates' local FMM navigation grids.
 4. **Narrated Split-Screen MP4 Export**: Automatically renders synchronized multi-robot rollout videos.

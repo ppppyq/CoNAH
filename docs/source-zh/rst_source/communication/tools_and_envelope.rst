@@ -1,7 +1,7 @@
 通信工具与信封契约
 ===================
 
-在 CoNAH 中，机间通信由 ``comm_harness/communication/`` 提供统一内核实现，包含 **标准线缆信封（Envelope）** 与 **4 个一等公民通信工具（CommTools）**。
+在 CoNAH 中，机间通信由 ``comm_harness/communication/`` 提供统一内核实现，包含 **标准线缆信封（Envelope）** 与 **4 个一等公民通信工具（CommTools）** 。
 
 1. 四个标准通信 Tool（ ``comm_harness/communication/tools.py`` ）
 -----------------------------------------------------------------

@@ -6,9 +6,9 @@ CoNAH decouples *what* agents transmit (``Envelope``) from *how* the medium deli
 Built-In Channel Models (``comm_harness/communication/channels.py``)
 ---------------------------------------------------------------------
 
-- **``IdealChannel``**: Lossless, zero-latency delivery for upper-bound collaborative evaluation.
-- **``ImpairedChannel``**: Configurable ``mtu_bytes``, token-bucket ``bandwidth_bytes_per_sec`` / ``burst_bytes``, Bernoulli ``drop_prob``, ``base_latency_s`` / ``jitter_s``, and Euclidean ``max_range_m`` cutoff.
-- **``BlackoutChannel``**: Drops all cross-robot traffic (``No-Comm`` ablation baseline).
+- **IdealChannel**: Lossless, zero-latency delivery for upper-bound collaborative evaluation.
+- **ImpairedChannel**: Configurable ``mtu_bytes``, token-bucket ``bandwidth_bytes_per_sec`` / ``burst_bytes``, Bernoulli ``drop_prob``, ``base_latency_s`` / ``jitter_s``, and Euclidean ``max_range_m`` cutoff.
+- **BlackoutChannel**: Drops all cross-robot traffic (``No-Comm`` ablation baseline).
 
 External Physics & Network Simulators
 --------------------------------------
