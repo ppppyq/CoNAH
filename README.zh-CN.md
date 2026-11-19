@@ -94,7 +94,7 @@
 **1. 安装 CoNAH 核心包。**
 
 ```bash
-git clone https://github.com/your-org/CoNAH.git && cd CoNAH
+git clone https://github.com/ppppyq/CoNAH.git && cd CoNAH
 pip install -e .
 ```
 

@@ -14,7 +14,7 @@ Prerequisites
 
 .. code-block:: bash
 
-   git clone https://github.com/your-org/CoNAH.git
+   git clone https://github.com/ppppyq/CoNAH.git
    cd CoNAH
    python3 -m venv .venv
    source .venv/bin/activate

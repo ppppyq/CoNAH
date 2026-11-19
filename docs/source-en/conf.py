@@ -61,7 +61,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/your-org/CoNAH",
+            "url": "https://github.com/ppppyq/CoNAH",
             "icon": "fab fa-github",
             "type": "fontawesome",
         }

@@ -94,7 +94,7 @@ Unlike single-agent frameworks or centralized multi-agent scripts that silently 
 **1. Install CoNAH core.**
 
 ```bash
-git clone https://github.com/your-org/CoNAH.git && cd CoNAH
+git clone https://github.com/ppppyq/CoNAH.git && cd CoNAH
 pip install -e .
 ```
 
